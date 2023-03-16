@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menubar{
+    background-color: #ffffff;
+    width: 100%;
+    position: fixed;
+}
+
+.menu{
+    float: right;
+    margin-right: 100px;
+}
+
+.menu li{
+    list-style: none;
+    width: 120px;
+    height: 60px;
+}
+
+.menu li a{
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    height: 60px;
+    line-height: 35px;
+    color: black;
+    font-weight: 500;
+}
+
+.menu li a:hover{
+    color: #038BCF;
+    border-bottom: 4px solid #038BCF;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.img{
+    float: left;
+    margin-left: 100px;
+    line-height: 60px;
+}
+
+.img img{
+    height: 35px;
+}
+
+.con{
+    height: 747px;
+}
+
+#home{
+    position: relative;
+    overflow: hidden;
+}
+
+
+#customer{
+	 
+	
+	/* background-image:url('/resources/img/cjtw.jpg'); */
+	/* background-size:100% 100%; */
+}
+/* map */
+#map{
+	background-color: #fafafa;
+	height: 1000px;
+}
+
+#interview{
+	background-color: #fafafa;
+	height: 800px;
+}
+
+#daumRoughmapContainer1678086472122{
+	margin:0 auto;
+	padding-top: 10px;
+}
+
+#ride{
+	border: 1px;
+	background-color: #f1f1f1;
+	width: 800px; 
+/* 	text-align:center; */ 
+	padding-left: 10px;
+	margin:0 auto;
+	border-radius: 5px;
+}
+
+.h2_t{
+	text-align: center;
+	padding-top: 50px;
+}
+
+p{
+	text-align: center;
+	padding-top: 30px;
+}
+
+
+/* home */
+#home img{
+    width: 1520px;
+    height: 747px;
+}
+
+#home ul{
+    position: absolute;
+    left: 0;
+    width: 4560px;
+}
+
+#home li{
+    float: left;
+    list-style: none;
+}
+
+#home span {
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 20px;
+    top: 50%;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+#services{
+	background-color: #ffffff;
+	background-image: url("/resources/img/cloud4.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+.service{
+	text-align: center;
+}
+.center{
+	text-align: center;
+}
+  
+  .b1{
+	
+	width: 450px;
+	height: 400px;
+	background-color: #fceaba;
+	float: left;
+	margin-top: 15%;
+	border-radius: 20px 20px 20px 20px;
+	opacity: 0.9;
+	
+}
+.b2{
+	
+	width: 450px;
+	height: 400px;
+	background-color: #9ad2e4;
+	display:inline-block;
+	margin-top: 15%;
+	border-radius: 20px 20px 20px 20px;
+	opacity: 0.9;
+}
+
+.b3{
+	
+	width: 450px;
+	height: 400px;
+	background-color: #c1e7ba;
+	float: right;
+	margin-top: 15%;
+	border-radius: 20px 20px 20px 20px;
+	opacity: 0.9;
+}
+.sic{
+	font-weight: bold;
+	
+}
+.mail{
+	text-align: center;
+	font-weight:bolder; 
+	color: white;
+}
+
+#vision{
+	height:1300px;
+	background-color: #fafafa;
+	width: 80%;
+	margin: 0 auto;
+}
+	#back{
+		width:100%; 
+		margin:0 auto; 
+		padding-top: 100px;
+        height: 500px; 
+        position: relative;}
+    #back::before{
+        content: "";
+        background: url("/resources/img/img_vision.jpg");
+        background-size: cover;
+        opacity: 0.5;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+    #back h2{
+    text-align: center;
+    position: relative;
+    font-size: 3.0em;
+    }
+    #back ul{
+    padding-left: 10%;
+    text-align: left; 
+    position: relative;}
+    
+    #java{
+		width:100%; 
+		margin:0 auto;
+		height:300px; 
+		position: relative;
+     }
+     #java h2{
+    text-align: center;
+    position: relative;
+     font-size: 3.0em;
+    }
+      #java ul{
+    list-style:none;
+    margin:0;
+    padding-left:9%;
+    position: relative;
+    }
+    #java ul li{
+    margin: 20px 20px 0px 20px;
+    padding: 0 0 0 0;
+    border : 0;
+    float: left;
+    position: relative;
+    }
+   	.text{
+   	text-align: center;
+   	font-size: 1.2em;
+   	}
+   	#solution{
+		width:100%;
+		padding-top:0px; 
+		margin:0 auto;
+		height:200px; 
+		position: relative;
+     }
+     #solution h2{
+    text-align: center;
+    position: relative;
+     font-size: 3.0em;
+    }
+      #solution ul{
+    list-style:none;
+    margin:0;
+    padding-left:4%;
+    position: relative;
+    }
+    #solution ul li{
+    margin: 20px 20px 0px 20px;
+    padding: 0 0 0 0;
+    border : 0;
+    float: left;
+    position: relative;
+    }
+   	.text{
+   	text-align: center;
+   	font-size: 1.2em;
+   	}
+/* ------비전끝 ------ */
+/* ------------------------------------------------ customer css처리  start ------------------------------------------------ */
+li {
+  list-style-type: none;
+}
+
+.slide {
+	border-radius:5px;
+	margin: 0 auto;
+	
+  /* layout */
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+
+  /* position */
+  /* slide_button의 position absolute가 컨테이너 안쪽에서 top, left, right offset이 적용될 수 있도록 relative를 준다. (기본값이 static인데, static인 경우 그 상위 컨테이너로 나가면서 현재 코드에선 html을 기준으로 offset을 적용시키기 때문) */
+  position: relative;
+
+  /* size */
+  width: 60%;
+
+  /* slide drag를 위해 DOM요소가 드래그로 선택되는것을 방지 */
+  user-select: none;
+}
+.slide_item {
+  /* layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* position - 버튼 클릭시 left offset값을 적용시키기 위해 */
+  position: relative;
+  left: 0px;
+
+  /* size */
+  width: 100%;
+  height: 300px;
+  /* flex item의 flex-shrink는 기본값이 1이므로 컨테이너 크기에 맞게 줄어드는데, 슬라이드를 구현할 것이므로 줄어들지 않도록 0을 준다. */
+  flex-shrink: 0;
+
+  /* transition */
+  transition: left 0.15s;
+}
+.slide_button {
+  /* layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* position */
+  position: absolute;
+  /* 버튼이 중앙에 위치하게 하기위해 계산 */
+  top: calc(50% - 16px);
+
+  /* size */
+  width: 32px;
+  height: 32px;
+
+  /* style */
+  border-radius: 100%;
+  background-color: #cccc;
+  cursor: pointer;
+}
+
+.slide_prev_button {
+  left: 10px;
+}
+.slide_next_button {
+  right: 10px;
+}
+.slide_item{
+	opacity:1;
+}
+
+/* 각 슬라이드가 변경되는 것을 시각적으로 확인하기 쉽도록 각 슬라이드별 색상 적용 */
+.slide_item.item1 {
+	background-image:url('/resources/img/lg.jpg');
+	background-size:100% 100%;
+}
+.slide_item.item2 {
+  background-image:url('/resources/img/ssang.gif');
+  background-size:100% 100%
+}
+.slide_item.item3 {
+  background-image:url('/resources/img/itcen.png');
+  background-size:100% 100%
+}
+.slide_item.item4 {
+  background-image:url('/resources/img/cloit.jpg');
+  background-size:100% 100%
+}
+.slide_item.item5 {
+  background-image:url('/resources/img/baspin.jpg');
+  background-size:100% 100%
+}
+.slide_item.item6 {
+  background-image:url('/resources/img/seorin.jpeg');
+  background-size:100% 100%
+}
+
+/* 페이지네이션 스타일 */
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.slide_pagination {
+  /* layout */
+  display: flex;
+  gap: 5px;
+
+  /* position */
+  position: absolute;
+  bottom: 0;
+  /* left:50%, translateX(-50%)를 하면 가로 가운데로 위치시킬 수 있다. */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slide_pagination > li {
+  /* 현재 슬라이드가 아닌 것은 투명도 부여 */
+  color: #7fb5ff88;
+  cursor: pointer;
+  font-size: 25px;
+}
+.slide_pagination > li.active {
+  /* 현재 슬라이드 색상은 투명도 없이 */
+  color: #7fb5ff;
+}
+
+.slide_item_duplicate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 0px;
+  width: 100%;
+  height: 300px;
+  flex-shrink: 0;
+  transition: left 0.15s;
+}
+/* ------------------------------------------------ customer css처리  end ------------------------------------------------ */
+
+
+/* about css*/
+#about{
+    padding-top: 150px;
+    height: 2200px;
+}
+
+#about ul{
+    width: 1000px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+#about li{
+    list-style: none;
+    height: 200px;
+    width: 500px;
+  }
+
+#about ul span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.company{
+    width: 1000px;
+    margin: auto;
+}
+
+.company hr{
+    width: 50px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    border: 1px solid rgb(194, 194, 194);
+}
+
+.com_logo{
+    margin: auto;
+    display: block;
+}
+
+.name{
+    width: 220px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.name span{
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.name p{
+    font-size: 18px;
+}
+
+.business{
+    width: 710px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 250px;
+}
+
+.business img{
+    margin-right: 50px;
+}
+
+/* about css 끝*/
+
+/* footer css */
+footer{
+    clear: both;
+    width: 100%;
+    border-top: 1px solid rgb(210, 210, 210);
+}
+
+footer li{
+    list-style: none; 
+    float: left;
+    color: #7e7e7e;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+footer li:nth-child(4){
+    float: none;
+}
+
+footer img{
+    margin-bottom: 50px;
+}
+
+footer p{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info{
+    width: 980px;
+    margin: auto;
+    margin-top: 40px;
+}
+/* footer css 끝 */

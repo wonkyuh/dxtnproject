@@ -1,0 +1,58 @@
+.total{
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 60px;
+}
+
+th, td{
+    padding: 10px;
+    text-align: left;
+}
+
+input.underline{
+   border-left-width: 0;
+   border-top-width: 0;
+   border-right-width: 0; 
+   border-bottom-width: 1; 
+}
+section {
+  height: 80vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0;
+}
+
+ 
+ .btn-primary {
+  background-color: rgb(139, 224, 205);
+  color: #222;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: rgb(76, 166, 146);
+}
+
+
+.btn-secondary {
+  background-color: rgb(190, 190, 190);
+  color: rgb(64, 64, 64);
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: rgb(158, 158, 158);
+}
+
+.btn-third {
+  background-color: rgb(251, 209, 87);
+  color: rgb(64, 64, 64);
+  border: none;
+}
+
+.btn-third:hover {
+  background-color: rgb(242, 190, 40)
+}
+ 

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="co.dxtn.pro.employ.model.EmployDAO">
+	<select id="employList" parameterType="edto" resultType="edto">
+		SELECT A.*
+		FROM
+		(SELECT @RNUM:=@RNUM+1 AS RNUM, R.*
+		FROM (SELECT @RNUM:=0) RR, 
+			(SELECT ENO, ESUB, ECON, EREF, 
+				ESTEP, ELEVEL, EWRITER, EREGDATE, READCOUNT
+			FROM EMPLOY
+			ORDER BY EREF DESC, ESTEP ASC) R) A
+		WHERE A.RNUM BETWEEN #{start} AND #{end}
+	</select>
+	<select id="employListCnt" resultType="int">
+		SELECT COUNT(ENO) 
+		FROM EMPLOY
+	</select>
+	<insert id="employWrite" parameterType="edto">
+		<selectKey resultType="int" keyProperty="eno" order="BEFORE">
+		SELECT IFNULL(MAX(ENO), 0)+1 AS ENO
+		FROM employ
+		</selectKey>
+			INSERT INTO employ(ENO, ESUB, ECON, EWRITER, EREF, ESTEP, ELEVEL)
+			<choose>
+				<when test="eref==0">
+					VALUES (#{eno}, #{esub}, #{econ}, #{ewriter}, #{eno}, 0, 0)
+				</when>
+				<when test="eref>0">
+					VALUES (#{eno}, #{esub}, #{econ}, #{ewriter}, #{eref}, #{estep}+1, #{elevel}+1)
+				</when>
+			</choose>
+	</insert>
+	<select id="employCont" parameterType="edto" resultType="edto">
+		SELECT ENO, ESUB, EWRITER, ECON, EREF, 
+				ESTEP, ELEVEL, EWRITER, EREGDATE, READCOUNT
+			FROM EMPLOY
+			WHERE ENO = #{eno}
+	</select>
+	<update id="readcount">
+		UPDATE EMPLOY SET READCOUNT = READCOUNT + 1 WHERE ENO = #{eno}
+	</update>
+	<delete id="employDel" parameterType="edto">
+		DELETE 
+		FROM EMPLOY 
+		WHERE ENO = #{eno}
+	</delete>
+	<update id="employUpdate" parameterType="edto">
+		UPDATE EMPLOY SET ESUB = #{esub}, ECON = #{econ}
+		WHERE ENO = #{eno} 
+	</update> 
+</mapper>

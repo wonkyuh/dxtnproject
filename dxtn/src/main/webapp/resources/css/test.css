@@ -1,0 +1,104 @@
+/* <style>
+	table{
+		 border-collapse : collapse;
+	}
+	
+	.board_view_header {
+    padding: 20px 0 10px;
+    border-top: 1px #8d8d8d solid;
+    border-bottom: 1px #e7e7e7 solid;
+}
+	
+	div{
+		display: block;
+	}
+	
+	ul {
+	    display: block;
+	    list-style-type: disc;
+	    margin-block-start: 1em;
+	    margin-block-end: 1em;
+	    margin-inline-start: 0px;
+	    margin-inline-end: 0px;
+	    padding-inline-start: 40px;
+	}
+	
+	li {
+	    display: list-item;
+	    text-align: -webkit-match-parent;
+	}
+	
+	dl, ul, ol, menu, li {
+    	list-style: none;
+	}
+	
+	.board_view_header .post_btns {
+	    position: absolute;
+	    right: 0;
+	    bottom: 0;
+	    font-size: 0;
+	}
+	
+	.board_view_header .post_btns > li:first-child {
+    	padding-left: 0;
+	}
+	.board_view_header .post_info > li {
+	    display: inline-block;
+	    vertical-align: top;
+	    margin: 10px 12px 0 0;
+	    font-size: 13px;
+	    color: #999;
+	}
+	
+	.board_view_header .post_btn > li {
+	    display: inline-block;
+	    vertical-align: top;
+	    margin: 10px 12px 0 0;
+	    font-size: 13px;
+	    color: #999;
+	}
+	
+	.board_view_header .post_btns > li:after {
+    	position: absolute;
+	    left: 0;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    display: block;
+	    content: '+';
+	    font-size: 0;
+	    width: 1px;
+	    height: 13px;
+	    background-color: #b7b7b7;
+	}
+	
+	.share {
+    position: relative;
+    z-index: 900;
+}
+	.board_view_header .board_view_header2 {
+    padding-top: 6px;
+    position: relative;
+	}
+	
+	.board_view_header1 .board_view_sub{
+		margin-left: 40px;
+	}
+	
+	.board_view_header .post_btns button {
+    font-size: 15px;
+    color: #333;
+}
+	.board_view{
+		width: 70%;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+	
+	h2{
+		margin-top: 60px;
+	}
+	
+	.content{
+		margin-left: 20px;
+	}
+</style> */
