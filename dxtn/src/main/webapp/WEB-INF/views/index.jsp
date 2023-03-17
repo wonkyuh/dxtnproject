@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jenkins TEST</title>
+    <title>Push 테스트 중입니다.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
@@ -326,9 +326,12 @@
 			</table>
 			</div>
         </div>
-		<div style="text-align:center;">
-        		<input type="button" value="chat" class="btn btn-primary" onclick="window.open('/chat','채팅방')">
-        	</div>
+        <form>
+			<div style="text-align:center;">				
+	        	<input type="button" value="chat" class="btn btn-primary" id="chat" >
+	        	<input type="hidden" value="" id="chatName" name="chatName" >
+	        </div>
+        </form>
     </container>
     <footer>
         <div class="info">
@@ -426,6 +429,21 @@
         document.addEventListener("DOMContentLoaded",function(){
             move(currentIdx);
         });
+    </script>
+    <script>
+    $().ready(function() {
+    	$("#chat").click(function(e) {
+    		var inName = prompt('이름을 입력하세요');
+    		if (inName != null) {
+    				$("#chatName").attr("value",inName);
+    				$("form").attr("action", "/chat");
+    				$("form").submit();
+    		} else {
+    			alert('이름을 입력하세요.')
+    			return;
+    		}
+    	});
+    });
     </script>
     <script src="resources/js/slide.js"></script>
 </body>

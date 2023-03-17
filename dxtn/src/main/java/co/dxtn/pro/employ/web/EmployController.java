@@ -30,8 +30,8 @@ public class EmployController {
 		int curentPg = 1;
 		if(request.getParameter("curentPg")!= null)
 			curentPg = Integer.parseInt(request.getParameter("curentPg"));
-		model.addAttribute("curentPg", curentPg);
 		
+		model.addAttribute("curentPg", curentPg);
 		model.addAttribute("totCnt", totCnt);
 		model.addAttribute("articles", list);
 		model.addAttribute("pageCnt", totCnt/PageInfo.PLINECNT + (totCnt%PageInfo.PLINECNT==0?0:1));

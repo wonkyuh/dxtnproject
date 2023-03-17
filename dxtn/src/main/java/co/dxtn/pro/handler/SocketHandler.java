@@ -3,6 +3,7 @@ package co.dxtn.pro.handler;
 import java.util.HashMap;
 
 import org.springframework.stereotype.Component;
+import org.springframework.ui.Model;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketSession;
@@ -13,10 +14,13 @@ public class SocketHandler extends TextWebSocketHandler {
 	
 	HashMap<String, WebSocketSession> sessionMap = new HashMap<>(); //웹소켓 세션을 담아둘 맵
 	
+	Model model;
+	
 	@Override
 	public void handleTextMessage(WebSocketSession session, TextMessage message) {
 		//메시지 발송
 		String msg = message.getPayload();
+		
 		for(String key : sessionMap.keySet()) {
 			WebSocketSession wss = sessionMap.get(key);
 			try {

@@ -40,7 +40,6 @@ public class EmployServiceImpl implements EmployService {
 	@Override
 	public int employWrite(EmployDTO dto) {
 		return employDAO.employWrite(dto);
-		
 	}
 
 	@Override
